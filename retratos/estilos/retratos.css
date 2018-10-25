@@ -1,0 +1,230 @@
+@font-face
+{
+	font-family:'dancing-script';
+	src:url('../../font/dancing-script.ttf');
+}
+
+	body
+	{
+		background-color: black;
+		font-family:'dancing-script';
+	}
+
+	#wrapper
+	{
+		width:900px;
+		margin: 0 auto;
+	}
+	nav a{
+	 	text-decoration: none;
+	 	color: white;
+
+	}
+header 
+	{
+		background-color: #5b7899;
+		border-radius: 10px 10px 0px 0px;
+		height:100px;
+		
+		
+	}
+
+	h1
+	{
+		color:white;
+		text-shadow: 2px 2px #02010a;
+		display: inline;
+		padding: 10px;
+		
+	}
+	#titulo
+	{
+		width:600px;
+		float: left;
+		
+	}
+
+	ul
+	{
+		list-style-type: none;
+		padding:10px;
+		overflow: hidden;
+	
+
+	}
+	li
+	{
+		float: right;
+		display: block;
+		margin: 0px 5px;
+		padding: 15px 0px;
+		color:white;
+	}
+	section img{
+		
+		height: 180px;
+		padding: 0px 0px 0px 0px;
+		max-width:100%;
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		box-shadow: 2px 2px 2px 2px #02010a;
+		
+	}
+
+	.bloque1{
+		background-color: red;
+		order: 1;
+	}
+
+	.bloque1 img{
+		-webkit-filter:blur(10px);
+		filter:blur(10px);
+		
+
+	}
+	.bloque2 img,.bloque4 img,.bloque6 img{
+		-webkit-filter:grayscale(100%);
+		filter:grayscale(100%);
+	
+	}
+
+	.bloque3 img{
+		-webkit-filter:sepia(90%);
+		filter:sepia(90%);
+		
+	}
+	
+	.bloque2{
+		background-color: green;
+		order: 2;
+	}
+
+	
+	.bloque3{
+		background-color: blue;
+		order: 3;
+	}
+
+	
+	.bloque4{
+		
+		order: 4;
+	}
+	
+	.bloque5{
+	
+		order: 5;
+	}
+	
+	.bloque6{
+		
+		order: 6;
+	}
+	
+
+	div [class*="bloque"]{
+		background-color: #d5c75f;
+		flex: 1 2 30%;
+		height:100%;
+		height:230px;
+	 padding:20px 10px 10px 10px;
+		
+	}
+	
+
+	.contenedor{
+
+		display: flex;
+		flex-flow:row wrap;
+		width: 100%;
+	
+	}
+	
+article[id*="f"]
+	{
+		width:25%;
+		min-height:150px;
+		float: left;
+		margin-bottom:10px;
+			
+	
+	}
+	footer{
+		width: 100%;
+		background-color:#c6d5c5;
+		border-radius:0px 0px 10px 10px;
+		float: left;
+		display: block;
+	}
+	#content{
+		padding:0px 30px 0px 30px;
+	}
+
+	.redes{
+		width:12%;
+	
+
+	}
+	.redes img{
+		width: 100%;
+		float: left;
+		height: 20px;
+	}
+	.text{
+		float: left;
+		margin:8px 5px 5px 5px;
+	}
+
+		
+	@media (max-width:900px)
+	{
+		
+		#wrapper{
+			width: 100%;
+			margin: 0 auto;
+		}
+	
+		header{
+			width: 100%;
+		}
+
+		div[class*="bloque"]
+		{
+			width: 100%;
+	
+		}
+
+		article[id*="f"]
+		{
+			width:100%;
+			border-bottom: 1px solid gray;	
+	
+		}
+		.contenedor{
+		flex-flow:row wrap;
+	}
+		div[class*="bloque"]
+		{
+		background-color: #d5c75f;
+		flex: 1 100%;
+		height:100%;
+		height:230px;
+	 padding:20px 10px 10px 10px;
+	
+		}
+
+			.redes{
+				max-width:9%;
+			
+
+			}
+			.redes img{
+				width: 100%;
+				float: left;
+			}
+			.text{
+				float: left;
+				margin:8px;
+			}
+}
